@@ -44,7 +44,7 @@ $config = array (
 	 * Note: The messages are logged with the DEBUG log level, so you also need to set
 	 * the 'logging.level' option to LOG_DEBUG.
 	 */
-	'debug' => FALSE,
+	'debug' => TRUE,
 
 
 	'showerrors'            =>	TRUE,

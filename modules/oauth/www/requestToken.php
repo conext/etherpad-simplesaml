@@ -10,14 +10,14 @@ try {
 
 	$hmac_method = new OAuthSignatureMethod_HMAC_SHA1();
 	$plaintext_method = new OAuthSignatureMethod_PLAINTEXT();
-	$rsa_method = new sspmod_oauth_OAuthSignatureMethodRSASHA1();
+	//$rsa_method = new sspmod_oauth_OAuthSignatureMethodRSASHA1();
 
 	$server->add_signature_method($hmac_method);
 	$server->add_signature_method($plaintext_method);
-	$server->add_signature_method($rsa_method);
+	//$server->add_signature_method($rsa_method);
 
 	$req = OAuthRequest::from_request();
-	$token = $server->fetch_request_token($req, null, $req->get_version());
+	$token = $server->fetch_request_token($req, null, "1.0");
 
 	// OAuth1.0-revA adds oauth_callback_confirmed to token
 	echo $token . "&oauth_callback_confirmed=true";

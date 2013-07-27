@@ -85,7 +85,9 @@ abstract class OAuthSignatureMethod {
    */
   public function check_signature($request, $consumer, $token, $signature) {
     $built = $this->build_signature($request, $consumer, $token);
-
+    error_log("Signature: ".$built);
+    error_log($consumer->key);
+    error_log($consumer->secret);
     // Check for zero length, although unlikely here
     if (strlen($built) == 0 || strlen($signature) == 0) {
       return false;
@@ -119,6 +121,7 @@ class OAuthSignatureMethod_HMAC_SHA1 extends OAuthSignatureMethod {
 
   public function build_signature($request, $consumer, $token) {
     $base_string = $request->get_signature_base_string();
+    error_log($base_string);
     $request->base_string = $base_string;
 
     $key_parts = array(
@@ -128,7 +131,6 @@ class OAuthSignatureMethod_HMAC_SHA1 extends OAuthSignatureMethod {
 
     $key_parts = OAuthUtil::urlencode_rfc3986($key_parts);
     $key = implode('&', $key_parts);
-
     return base64_encode( hash_hmac('sha1', $base_string, $key, true));
   }
 }
@@ -769,7 +771,7 @@ class OAuthUtil {
   // Can filter out any non-oauth parameters if needed (default behaviour)
   // May 28th, 2010 - method updated to tjerk.meesters for a speed improvement.
   //                  see http://code.google.com/p/oauth/issues/detail?id=163
-  public static function split_header($header, $only_allow_oauth_parameters = true) {
+  public static function split_header($header, $only_allow_oauth_parameters = false) {
     $params = array();
     if (preg_match_all('/('.($only_allow_oauth_parameters ? 'oauth_' : '').'[a-z_-]*)=(:?"([^"]*)"|([^,]*))/', $header, $matches)) {
       foreach ($matches[1] as $i => $h) {

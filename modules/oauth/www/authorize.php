@@ -18,17 +18,17 @@ try {
 
 	$hmac_method = new OAuthSignatureMethod_HMAC_SHA1();
 	$plaintext_method = new OAuthSignatureMethod_PLAINTEXT();
-	$rsa_method = new sspmod_oauth_OAuthSignatureMethodRSASHA1();
+	//$rsa_method = new sspmod_oauth_OAuthSignatureMethodRSASHA1();
 
 	$server->add_signature_method($hmac_method);
 	$server->add_signature_method($plaintext_method);
-	$server->add_signature_method($rsa_method);
+	//$server->add_signature_method($rsa_method);
 
 
 	$config = SimpleSAML_Configuration::getInstance();
 	$session = SimpleSAML_Session::getInstance();
 
-	$as = $oauthconfig->getString('auth');
+	$as = $oauthconfig->getString('auth','default-sp');
 	if (!$session->isValid($as)) {
 		SimpleSAML_Auth_Default::initLogin($as, SimpleSAML_Utilities::selfURL());
 	}

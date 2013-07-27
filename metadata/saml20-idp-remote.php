@@ -10,6 +10,7 @@
 /*
  * Guest IdP. allows users to sign up and register. Great for testing!
  */
+/*
 $metadata['https://openidp.feide.no'] = array(
 	'name' => array(
 		'en' => 'Feide OpenIdP - guest users',
@@ -21,17 +22,34 @@ $metadata['https://openidp.feide.no'] = array(
 	'SingleLogoutService'  => 'https://openidp.feide.no/simplesaml/saml2/idp/SingleLogoutService.php',
 	'certFingerprint'      => 'c9ed4dfb07caf13fc21e0fec1572047eb8a7a4cb'
 );
-
-$metadata['https://wp.maligree.linuxpl.info'] = array(
+*/
+$metadata['https://engine.jacson.jiscadvance.biz/authentication/idp/metadata'] = array(
 	'name' => array(
 		'en' => 'Conext IdP',
 	),
 	'SingleSignOnService' => 'https://engine.jacson.jiscadvance.biz/authentication/idp/single-sign-on',
+	'certFingerprint' => '4bebaa8c1b4629b74abb488a64ebd3a842556676',
+	'authproc'            => array(
+                10 => array('class' => 'core:AttributeMap', 'oid2name'),
+        ),
+);
+
+$metadata['https://engine.collaborate.jiscadvance.biz/authentication/idp/metadata'] = array(
+    'name' => array(
+        'en' => 'Collaborate Conext IdP',
+    ),
+    'SingleSignOnService' => 'https://engine.collaborate.jiscadvance.biz/authentication/idp/single-sign-on',
+    'certFingerprint' => 'f0d200c74a83e2604e275a5be426b54e3bdab135',
+    'authproc' => array(
+        10 => array('class' => 'core:AttributeMap', 'oid2name'),
+    ),
 );
 
 /*
  * Feide, the norwegian federation. Test and production metadata.
  */
+
+/*
 $metadata['https://idp-test.feide.no'] = array(
 	'name' => array(
 		'en' => 'Feide Test environment',
@@ -57,3 +75,4 @@ $metadata['https://idp.feide.no'] = array(
 	'certFingerprint'              => 'cde69e332fa7dd0eaa99ee0ddf06916e8942ac53',
 	'hint.cidr'                    => '158.38.0.0/16',
 );
+*/

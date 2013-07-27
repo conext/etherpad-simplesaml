@@ -1,8 +1,126 @@
-Apr 11 19:40:48 simplesamlphp ERROR [fdf72fc59c] SimpleSAML_Error_Error: UNHANDLEDEXCEPTION
-Apr 11 19:40:48 simplesamlphp ERROR [fdf72fc59c] Backtrace:
-Apr 11 19:40:48 simplesamlphp ERROR [fdf72fc59c] 0 /home/maligree/domains/maligree.linuxpl.info/public_html/simplesamlphp/www/module.php:180 (N/A)
-Apr 11 19:40:48 simplesamlphp ERROR [fdf72fc59c] Caused by: SimpleSAML_Error_Exception: The issuer of the response does not match to the identity provider we sent the request to.
-Apr 11 19:40:48 simplesamlphp ERROR [fdf72fc59c] Backtrace:
-Apr 11 19:40:48 simplesamlphp ERROR [fdf72fc59c] 1 /home/maligree/domains/maligree.linuxpl.info/public_html/simplesamlphp/modules/saml/www/sp/saml2-acs.php:65 (require)
-Apr 11 19:40:48 simplesamlphp ERROR [fdf72fc59c] 0 /home/maligree/domains/maligree.linuxpl.info/public_html/simplesamlphp/www/module.php:135 (N/A)
-Apr 11 19:40:48 simplesamlphp ERROR [fdf72fc59c] Error report with id 820b63ad generated.
+Apr 26 13:34:28 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/oauth/', '%REASON%' => 'Directory listing not available.')
+Apr 26 13:34:28 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 13:34:28 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:123 (N/A)
+Apr 26 13:34:28 simplesamlphp ERROR [7be3e108bc] Error report with id d8e3796c generated.
+Apr 26 13:36:02 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+Apr 26 13:36:02 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 13:36:02 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+Apr 26 13:36:02 simplesamlphp ERROR [7be3e108bc] Error report with id 3d889adb generated.
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_Error: UNHANDLEDEXCEPTION
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:180 (N/A)
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] Caused by: Exception: Required field [description] was empty.
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] 3 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/lib/Registry.php:42 (sspmod_oauth_Registry::requireStandardField)
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] 2 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/lib/Registry.php:47 (sspmod_oauth_Registry::checkForm)
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] 1 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/www/registry.edit.php:50 (require)
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:135 (N/A)
+Apr 26 13:39:08 simplesamlphp ERROR [7be3e108bc] Error report with id f11eae65 generated.
+Apr 26 13:39:17 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+Apr 26 13:39:17 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 13:39:17 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+Apr 26 13:39:17 simplesamlphp ERROR [7be3e108bc] Error report with id 2a5c9004 generated.
+Apr 26 13:42:00 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+Apr 26 13:42:00 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 13:42:00 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+Apr 26 13:42:00 simplesamlphp ERROR [7be3e108bc] Error report with id 6e5038ba generated.
+Apr 26 13:47:09 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+Apr 26 13:47:09 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 13:47:09 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+Apr 26 13:47:09 simplesamlphp ERROR [7be3e108bc] Error report with id ac816160 generated.
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] SimpleSAML_Error_Exception: Error 2 - error_log() expects parameter 1 to be string, array given
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] Backtrace:
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] 7 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/_include.php:70 (SimpleSAML_error_handler)
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] 6 [builtin] (error_log)
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] 5 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:131 (OAuthSignatureMethod_HMAC_SHA1::build_signature)
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] 4 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:87 (OAuthSignatureMethod::check_signature)
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] 3 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:670 (OAuthServer::check_signature)
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] 2 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:526 (OAuthServer::fetch_request_token)
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] 1 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/www/requestToken.php:20 (require)
+Apr 26 14:13:16 simplesamlphp ERROR [2254926120] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:135 (N/A)
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_Exception: Error 2 - error_log() expects parameter 1 to be string, array given
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] 7 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/_include.php:70 (SimpleSAML_error_handler)
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] 6 [builtin] (error_log)
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] 5 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:131 (OAuthSignatureMethod_HMAC_SHA1::build_signature)
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] 4 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:87 (OAuthSignatureMethod::check_signature)
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] 3 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:670 (OAuthServer::check_signature)
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] 2 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:526 (OAuthServer::fetch_request_token)
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] 1 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/www/requestToken.php:20 (require)
+Apr 26 14:13:39 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:135 (N/A)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] SimpleSAML_Error_Exception: Error 8 - Undefined variable: key
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] Backtrace:
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 6 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/_include.php:70 (SimpleSAML_error_handler)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 5 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:134 (OAuthSignatureMethod_HMAC_SHA1::build_signature)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 4 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:87 (OAuthSignatureMethod::check_signature)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 3 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:673 (OAuthServer::check_signature)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 2 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:529 (OAuthServer::fetch_request_token)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 1 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/www/requestToken.php:20 (require)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:135 (N/A)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] SimpleSAML_Error_Exception: Error 8 - Undefined variable: key
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] Backtrace:
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 6 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/_include.php:70 (SimpleSAML_error_handler)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 5 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:135 (OAuthSignatureMethod_HMAC_SHA1::build_signature)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 4 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:87 (OAuthSignatureMethod::check_signature)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 3 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:673 (OAuthServer::check_signature)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 2 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/libextinc/OAuth.php:529 (OAuthServer::fetch_request_token)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 1 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/www/requestToken.php:20 (require)
+Apr 26 15:50:53 simplesamlphp ERROR [54bf8a9390] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:135 (N/A)
+Apr 26 16:00:42 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+Apr 26 16:00:42 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 16:00:42 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+Apr 26 16:00:42 simplesamlphp ERROR [7be3e108bc] Error report with id 53cdfed0 generated.
+Apr 26 16:28:26 simplesamlphp ERROR [7be3e108bc] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+Apr 26 16:28:26 simplesamlphp ERROR [7be3e108bc] Backtrace:
+Apr 26 16:28:26 simplesamlphp ERROR [7be3e108bc] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+Apr 26 16:28:26 simplesamlphp ERROR [7be3e108bc] Error report with id 3eabe0ef generated.
+May 03 23:26:00 simplesamlphp ERROR [9497a5622a] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+May 03 23:26:00 simplesamlphp ERROR [9497a5622a] Backtrace:
+May 03 23:26:00 simplesamlphp ERROR [9497a5622a] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+May 03 23:26:00 simplesamlphp ERROR [9497a5622a] Error report with id 805a79c0 generated.
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] SimpleSAML_Error_Error: UNHANDLEDEXCEPTION
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] Backtrace:
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:180 (N/A)
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] Caused by: Exception: Required field [description] was empty.
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] Backtrace:
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] 3 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/lib/Registry.php:42 (sspmod_oauth_Registry::requireStandardField)
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] 2 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/lib/Registry.php:47 (sspmod_oauth_Registry::checkForm)
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] 1 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/oauth/www/registry.edit.php:50 (require)
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:135 (N/A)
+May 03 23:26:17 simplesamlphp ERROR [9497a5622a] Error report with id f3b52739 generated.
+May 03 23:26:25 simplesamlphp ERROR [9497a5622a] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+May 03 23:26:25 simplesamlphp ERROR [9497a5622a] Backtrace:
+May 03 23:26:25 simplesamlphp ERROR [9497a5622a] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+May 03 23:26:25 simplesamlphp ERROR [9497a5622a] Error report with id 77432728 generated.
+May 03 23:28:19 simplesamlphp ERROR [9497a5622a] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+May 03 23:28:19 simplesamlphp ERROR [9497a5622a] Backtrace:
+May 03 23:28:19 simplesamlphp ERROR [9497a5622a] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+May 03 23:28:19 simplesamlphp ERROR [9497a5622a] Error report with id 8c59bf7e generated.
+May 03 23:29:35 simplesamlphp ERROR [9497a5622a] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+May 03 23:29:35 simplesamlphp ERROR [9497a5622a] Backtrace:
+May 03 23:29:35 simplesamlphp ERROR [9497a5622a] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+May 03 23:29:35 simplesamlphp ERROR [9497a5622a] Error report with id abc56afc generated.
+May 04 00:22:47 simplesamlphp ERROR [ba176717b8] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+May 04 00:22:47 simplesamlphp ERROR [ba176717b8] Backtrace:
+May 04 00:22:47 simplesamlphp ERROR [ba176717b8] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+May 04 00:22:47 simplesamlphp ERROR [ba176717b8] Error report with id 5198271d generated.
+May 04 11:43:53 simplesamlphp ERROR [768e6da705] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/metaedit/resources/style.css', '%REASON%' => 'The module \'metaedit\' was either not found, or wasn\'t enabled.')
+May 04 11:43:53 simplesamlphp ERROR [768e6da705] Backtrace:
+May 04 11:43:53 simplesamlphp ERROR [768e6da705] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:69 (N/A)
+May 04 11:43:53 simplesamlphp ERROR [768e6da705] Error report with id 0913c581 generated.
+May 15 12:41:07 simplesamlphp ERROR [d2b0250c0a] SimpleSAML_Error_NotFound: NOTFOUNDREASON('%URL%' => 'https://etherpad-groups.identitylabs.org/simplesaml/module.php/oauth/', '%REASON%' => 'Directory listing not available.')
+May 15 12:41:07 simplesamlphp ERROR [d2b0250c0a] Backtrace:
+May 15 12:41:07 simplesamlphp ERROR [d2b0250c0a] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:123 (N/A)
+May 15 12:41:07 simplesamlphp ERROR [d2b0250c0a] Error report with id 9510ee85 generated.
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] SimpleSAML_Error_Error: UNHANDLEDEXCEPTION
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] Backtrace:
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:180 (N/A)
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] Caused by: SimpleSAML_Error_Exception: Unable to find a certificate matching the configured fingerprint. Candidates: 'f0d200c74a83e2604e275a5be426b54e3bdab135'; certFingerprint: ''.
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] Backtrace:
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] 5 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/saml/lib/Message.php:116 (sspmod_saml_Message::findCertificate)
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] 4 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/saml/lib/Message.php:165 (sspmod_saml_Message::checkSign)
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] 3 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/saml/lib/Message.php:556 (sspmod_saml_Message::processAssertion)
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] 2 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/saml/lib/Message.php:528 (sspmod_saml_Message::processResponse)
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] 1 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/modules/saml/www/sp/saml2-acs.php:81 (require)
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] 0 /var/www/etherpad-groups/OpenConextApps-Etherpad/eplconext/simplesamlphp/www/module.php:135 (N/A)
+Jul 02 13:18:50 simplesamlphp ERROR [55ad6c68f0] Error report with id c7a4550d generated.
