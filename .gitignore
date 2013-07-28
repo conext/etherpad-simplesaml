@@ -1,4 +1,5 @@
 \.svn/
 \.gitignore$
+data/
 data/sqllite/oauth.sqllite
 log/simplesamlphp.log
